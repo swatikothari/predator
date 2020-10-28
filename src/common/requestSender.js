@@ -4,7 +4,8 @@ const request = require('request-promise-native');
 const defaultOptions = {
     timeout: 15 * 1000,
     json: true,
-    rejectUnauthorized: false
+    rejectUnauthorized: false,
+    resolveWithFullResponse: true
 };
 
 module.exports.send = async (options) => {
